@@ -2,6 +2,7 @@
     <string name="app_name">SignUpForm</string>
     <string name="tvEmail">Email</string>
     <string name="tvPassword">Password</string>
+    <string name="confirmPass">Confirm Password</string>
     <string name="btnSave">Save</string>
     <string name="errorEmail">Invalid Email</string>
     <string name="errorPassword">Invalid Password</string>
