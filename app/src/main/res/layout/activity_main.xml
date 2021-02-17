@@ -10,59 +10,101 @@
         android:id="@+id/tvEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="169dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="63dp"
         android:text="@string/tvEmail"
-        tools:layout_editor_absoluteX="80dp"
-        tools:layout_editor_absoluteY="169dp" />
+        app:layout_constraintBottom_toTopOf="@+id/tvPassword"
+        app:layout_constraintEnd_toStartOf="@+id/EnterEmail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tvPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="63dp"
+        android:layout_marginEnd="296dp"
+        android:layout_marginBottom="461dp"
         android:text="@string/tvPassword"
-        tools:layout_editor_absoluteX="53dp"
-        tools:layout_editor_absoluteY="251dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvEmail" />
 
     <EditText
         android:id="@+id/EnterEmail"
         android:layout_width="137dp"
         android:layout_height="42dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="154dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="48dp"
         android:ems="10"
         android:inputType="textEmailAddress"
-        tools:layout_editor_absoluteX="133dp"
-        tools:layout_editor_absoluteY="154dp" />
+        app:layout_constraintBottom_toTopOf="@+id/EnterPassword"
+        app:layout_constraintEnd_toStartOf="@+id/tvInvalidEmail"
+        app:layout_constraintStart_toEndOf="@+id/tvEmail"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
         android:id="@+id/EnterPassword"
         android:layout_width="139dp"
         android:layout_height="40dp"
+        android:layout_marginStart="133dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="93dp"
         android:ems="10"
         android:inputType="textPassword"
-        tools:layout_editor_absoluteX="133dp"
-        tools:layout_editor_absoluteY="244dp" />
+        app:layout_constraintBottom_toTopOf="@+id/btnSave"
+        app:layout_constraintEnd_toStartOf="@+id/tvInvalidPass"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EnterEmail" />
 
     <TextView
         android:id="@+id/tvInvalidEmail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="169dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="63dp"
         android:text="@string/errorEmail"
         android:visibility="invisible"
-        tools:layout_editor_absoluteX="288dp"
-        tools:layout_editor_absoluteY="169dp" />
+        app:layout_constraintBottom_toTopOf="@+id/tvInvalidPass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/EnterEmail"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tvInvalidPass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="63dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="461dp"
         android:text="@string/errorPassword"
         android:visibility="invisible"
-        tools:layout_editor_absoluteX="288dp"
-        tools:layout_editor_absoluteY="251dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/EnterPassword"
+        app:layout_constraintTop_toBottomOf="@+id/tvInvalidEmail" />
 
     <Button
         android:id="@+id/btnSave"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="159dp"
+        android:layout_marginTop="69dp"
+        android:layout_marginEnd="164dp"
+        android:layout_marginBottom="282dp"
         android:text="@string/btnSave"
-        tools:layout_editor_absoluteX="159dp"
-        tools:layout_editor_absoluteY="377dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EnterPassword" />
 </androidx.constraintlayout.widget.ConstraintLayout>
